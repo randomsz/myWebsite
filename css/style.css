@@ -1,0 +1,330 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+h1 {
+  color: black;
+  padding-left: 20px;
+}
+
+.banner {
+  /* display: block;
+  margin: auto; */
+  width: 100%;
+  height: 100%;
+  background-color: #a3b8ce;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.navBar > h1 {
+  /* font-family: "Brush Script MT", cursive; */
+}
+
+.navBar {
+  width: 100%;
+  color: white;
+  background-color: #551ae0;
+  /* margin: auto; */
+  /* padding: 2px 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  /* top: 50%; */
+  /* left: 3%; */
+  border-radius: 50px;
+  /* border: 3px solid red; */
+  z-index: 1;
+}
+
+.navBar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navBar ul li a:hover {
+  text-decoration: underline;
+  color: rgb(30, 46, 33);
+}
+
+.iam {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  /* border: 3px solid red; */
+  align-items: center;
+  padding-top: 180px;
+  justify-content: center;
+}
+
+.iam h1 {
+  font-size: 50px;
+}
+
+.home {
+  width: 90%;
+  /* height: 300px; */
+  margin: auto;
+  /* border: 3px solid rgb(158, 230, 14); */
+  padding-bottom: 150px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iam img {
+  width: 50px;
+  height: 50px;
+  /* border-radius: 50%; */
+}
+
+.image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.image {
+  /* border: 3px solid rgb(108, 50, 147); */
+  padding: 10px;
+}
+
+.wave {
+  position: relative;
+  /* width: 400px; */
+  animation-name: shal;
+  animation-duration: 1s;
+  transform-origin: 70% 70%;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  z-index: 0;
+}
+
+@keyframes shal {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.info {
+  /* border: 3px solid rgb(215, 12, 127); */
+  width: 800px;
+  display: inline-block;
+
+  /* float: left; */
+}
+
+.info p {
+  color: white;
+  padding: 10px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.info p a {
+  text-decoration: none;
+  color: rgb(39, 225, 119);
+}
+
+#abt {
+  padding-top: 50px;
+  /* border: 2px solid red; */
+}
+
+.abttext {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  width: 70%;
+  height: 80vh;
+  margin: 15px auto;
+  /* border: 3px solid red; */
+  color: white;
+  padding-bottom: 150px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.cards {
+  background-color: rgb(75 4 242);
+  /* border: 2px solid red; */
+  /* height: 70%; */
+  width: 35%;
+  margin: 5px;
+  text-align: center;
+  padding: 10px 30px;
+  box-shadow: 7px 5px 20px #17698f;
+  border-radius: 50px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+  background-color: rgb(60, 3, 191);
+}
+
+.cards h1 {
+  /* text-align: center; */
+  margin: 15px 5px;
+  text-decoration-line: underline;
+}
+
+.cards p {
+  line-height: 40px;
+  font-size: 20px;
+}
+
+#skl {
+  padding-top: 60px;
+  /* border: 2px solid red; */
+}
+
+.skilltxt {
+  /* display: flex; */
+  text-align: center;
+
+  /* justify-content: center; */
+}
+
+.skills {
+  width: 70%;
+  margin: 15px auto;
+  /* border: 3px solid red; */
+}
+
+.skills h4 {
+  text-align: right;
+}
+
+.cursor {
+  background-color: red;
+}
+
+.box {
+  background-color: #d8e3e8;
+  /* margin: 10px 0px; */
+}
+
+.javacursor {
+  background-color: #318ae2;
+  width: 10%;
+  height: 25px;
+  animation-name: cursor-java;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  margin-bottom: 15px;
+}
+
+@keyframes cursor-java {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+.htmlcursor {
+  background-color: #318ae2;
+  width: 10%;
+  height: 25px;
+  animation-name: cursor-html;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  margin-bottom: 15px;
+}
+
+@keyframes cursor-html {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+.csscursor {
+  background-color: #318ae2;
+  width: 10%;
+  height: 25px;
+  animation-name: cursor-css;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  margin-bottom: 15px;
+}
+
+@keyframes cursor-css {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.jscursor {
+  background-color: #318ae2;
+  width: 10%;
+  height: 25px;
+  animation-name: cursor-js;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  margin-bottom: 15px;
+}
+
+@keyframes cursor-js {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.proj {
+  margin-top: 150px;
+  text-align: center;
+}
